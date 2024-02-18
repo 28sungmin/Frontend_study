@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+p {
+  font-size: 20px;
+  font-weight: 700;
+}
 .tit {
-    color: red;
+  color: red;
 }
