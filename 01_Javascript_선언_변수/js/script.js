@@ -137,3 +137,50 @@ var $img_07 =
   "<img src='./img/chat.png' alt='게임 채팅장 변수 코드' width='500'>";
 document.write("< 코드 ><br />");
 document.write($img_07, "<br /><br />");
+
+// #6. 변수명 선언시 주의사항(반드시 기억을 할 것 ~~!!)
+document.write(
+  " <p style='font-size:16px'>#6. 변수명 선언시 주의사항(반드시 기억을 할 것 ~~!!)</p>"
+);
+document.write("#6-1 대소문자를 구분하여 작성한다.<br />");
+document.write("< 결과 ><br />");
+var age = 10;
+document.write(age, "<br />");
+var $img_08 = "<img src='./img/age.png' alt='대소문자 구별 코드' width='350'>";
+document.write("< 코드 ><br />");
+document.write($img_08, "<br /><br />");
+
+document.write(
+  "#6-2 변수명 첫 글자는 '$', '_', 영문(한글)만 작성할 수 있음. (숫자 불가)<br />"
+);
+document.write("- 되도록 한글 변수명은 지양하기<br />");
+
+// var 12num = 12;
+// document.write(12num, "<br />");
+document.write("< 결과 ><br />");
+var $img_09 =
+  "<img src='./img/no_num_first_error.png' alt='변수 첫 글자 숫자 에러 결과' width='900'>";
+document.write($img_09, "<br />");
+var $img_010 =
+  "<img src='./img/no_num_first.png' alt='변수 첫 글자 숫자 코드' width='350'>";
+document.write("< 코드 ><br />");
+document.write($img_010, "<br /><br />");
+
+document.write("< 결과 ><br />");
+var $12num = 12;
+document.write($12num, "<br />");
+var _favCoffee = "아이스 아메리카노";
+document.write(_favCoffee, "<br />");
+var $img_011 =
+  "<img src='./img/var_first.png' alt='게임 채팅장 변수 코드' width='350'>";
+document.write("< 코드 ><br />");
+document.write($img_011, "<br /><br />");
+
+document.write(
+  "#6-3 변수명 내부(첫 글자 제외)에는 '$', '_', '영문', '숫자'까지만 작성할 수 있음<br />"
+);
+document.write("- 사칙연산(+ - * / %) 불가, 절대 띄어쓰기 하지 말 것<br />");
+var num32 = 32;
+document.write(num32, "<br />");
+var apple_1 = "사과 한 개";
+document.write(apple_1, "<br />");
