@@ -1,1 +1,16 @@
 @charset "utf-8";
+
+/* 전체 선택자 */
+/* * {
+  color: orange;
+} */
+
+/* 태그 선택자 */
+/* h3 {
+  color: blueviolet;
+} */
+
+/* 클래스 선택자 */
+.class_selector {
+  background-color: #f90;
+}
