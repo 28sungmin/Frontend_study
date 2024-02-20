@@ -142,6 +142,8 @@ document.write($img_07, "<br /><br />");
 document.write(
   " <p style='font-size:16px'>#6. 변수명 선언시 주의사항(반드시 기억을 할 것 ~~!!)</p>"
 );
+
+// #6-1.
 document.write("#6-1 대소문자를 구분하여 작성한다.<br />");
 document.write("< 결과 ><br />");
 var age = 10;
@@ -150,6 +152,7 @@ var $img_08 = "<img src='./img/age.png' alt='대소문자 구별 코드' width='
 document.write("< 코드 ><br />");
 document.write($img_08, "<br /><br />");
 
+// #6-2.
 document.write(
   "#6-2 변수명 첫 글자는 '$', '_', 영문(한글)만 작성할 수 있음. (숫자 불가)<br />"
 );
@@ -176,11 +179,241 @@ var $img_011 =
 document.write("< 코드 ><br />");
 document.write($img_011, "<br /><br />");
 
+//#6-3.
 document.write(
   "#6-3 변수명 내부(첫 글자 제외)에는 '$', '_', '영문', '숫자'까지만 작성할 수 있음<br />"
 );
 document.write("- 사칙연산(+ - * / %) 불가, 절대 띄어쓰기 하지 말 것<br />");
+
+document.write("< 결과 ><br />");
 var num32 = 32;
 document.write(num32, "<br />");
 var apple_1 = "사과 한 개";
 document.write(apple_1, "<br />");
+var $img_012 =
+  "<img src='./img/num_.png' alt='사용가능 변수 코드' width='350'>";
+document.write("< 코드 ><br />");
+document.write($img_012, "<br /><br />");
+
+document.write("< 결과 ><br />");
+// var orange-1 =  "오렌지 박스";
+// document.write(orange-1);
+var $img_013 =
+  "<img src='./img/token-.png' alt='사용 불가능 변수 결과1' width='900'>";
+document.write($img_013, "<br />");
+var $img_014 =
+  "<img src='./img/token-code.png' alt='사용 불가능 변수 코드1' width='300'>";
+document.write("< 코드 ><br />");
+document.write($img_014, "<br /><br />");
+
+document.write("< 결과 ><br />");
+// var food1 food2 = "갈비탕";
+// document.write(food1 food2, "<br />");
+var $img_015 =
+  "<img src='./img/no_blank.png' alt='사용 불가능 변수 결과2' width='900'>";
+document.write($img_015, "<br />");
+var $img_016 =
+  "<img src='./img/no_blank_code.png' alt='사용 불가능 변수 코드2' width='350'>";
+document.write("< 코드 ><br />");
+document.write($img_016, "<br /><br />");
+
+document.write("< 결과 ><br />");
+var food3,
+  food4 = "설렁탕";
+document.write(food3, "<br />");
+document.write(food4, "<br />");
+var $img_017 =
+  "<img src='./img/undefined_code.png' alt='사용 불가능 변수 코드3' width='350'>";
+document.write("< 코드 ><br />");
+document.write($img_017, "<br /><br />");
+
+document.write("< 결과 ><br />");
+// var food5, food6 = "미역국", "육개장";
+// document.write(food5, "<br />");
+// document.write(food6, "<br />");
+var $img_018 =
+  "<img src='./img/no_two.png' alt='사용 불가능 변수 결과4' width='900'>";
+document.write($img_018, "<br />");
+var $img_019 =
+  "<img src='./img/no_two_code.png' alt='사용 불가능 변수 코드4' width='350'>";
+document.write("< 코드 ><br />");
+document.write($img_019, "<br /><br />");
+
+// 복수의 변수명을 선언할 때
+document.write("주의 !!<br />");
+document.write(
+  "복수의 변수명을 한번에 선언할 때는 초기 변수명만 선언하고 나중에 데이터를 담는다.<br />"
+);
+document.write(
+  "아래 코드처럼 변수명을 만들어놓고 따로 따로 값을 입력하는 거다.<br />"
+);
+document.write("< 결과 ><br />");
+var food7, food8;
+food7 = "볶음밥";
+food8 = "해장국";
+document.write(food7, "<br />");
+document.write(food8, "<br />");
+var $img_020 =
+  "<img src='./img/multi_var.png' alt='복수 변수 선언 코드' width='350'>";
+document.write("< 코드 ><br />");
+document.write($img_020, "<br /><br />");
+
+// #6-4 변수명에는 자바스크립트 예약어를 사용할 수 없다.
+document.write("#6-4 변수명에는 자바스크립트 예약어를 사용할 수 없다.<br />");
+document.write("< 결과 ><br />");
+var document = "문서공간입니다.";
+document.write(document, "<br />");
+document.write('결과 의미 : "document는 예약어야"라는 의미이다.<br />');
+var $img_021 =
+  "<img src='./img/no_document.png' alt='예약어 변수 사용 불가 코드' width='350'>";
+document.write("< 코드 ><br />");
+document.write($img_021, "<br /><br />");
+
+document.write("주의 !!<br />");
+document.write(
+  "예약어를 사용하려면 앞에 $를 붙이는 등의 작업을 해야 한다.<br />"
+);
+document.write("< 결과 ><br />");
+var $document = "문서공간입니다.";
+document.write($document, "<br />");
+var $img_022 =
+  "<img src='./img/use_$_document.png' alt='예약어 사용하는 방법 코드' width='350'>";
+document.write("< 코드 ><br />");
+document.write($img_022, "<br /><br />");
+
+//#6-5. 카멜기법 또는 파스칼기법으로 변수명 선언
+document.write(
+  "#6-5. 카멜기법(userName) 또는 파스칼기법(UserName)으로 변수명 선언<br />"
+);
+document.write("< 결과 ><br />");
+var userName = "홍길동";
+document.write(userName, "<br />");
+var UserName = "홍길순";
+document.write(UserName, "<br />");
+var $img_023 =
+  "<img src='./img/camel_pascal.png' alt='카멜기법과 파스칼기법 선언 코드' width='350'>";
+document.write("< 코드 ><br />");
+document.write($img_023, "<br /><br />");
+
+// #7. 문자형 데이터(string)
+document.write(
+  " <p style='font-size:16px'>#7. 문자형 데이터(string) : 변수의 값이 '데이터'(작은 따옴표) 또는 \"데이터\"(큰 따옴표)로 감싸진 형태</p>"
+);
+document.write("< 결과 ><br />");
+var korSoccer = "손흥민";
+var korSoccerShootingNum = "12";
+document.write(`${korSoccer}의 득점 수 : ${korSoccerShootingNum}골`, "<br />");
+var $img_024 = "<img src='./img/son.png' alt='손흥민 득점 코드' width='600'>";
+document.write("< 코드 ><br />");
+document.write($img_024, "<br /><br />");
+
+//주의!!
+document.write("주의 !!<br /><br />");
+document.write("문자형 + 숫자형 이라서 13이 아니라 121이 나온다.<br />");
+document.write("< 결과 ><br />");
+document.write(korSoccerShootingNum + 1, "<br />");
+var $img_025 =
+  "<img src='./img/num_plus_str.png' alt='문자형 더하기 숫자형 코드' width='500'>";
+document.write("< 코드 ><br />");
+document.write($img_025, "<br /><br />");
+
+// 콘솔창 색깔 구분!!
+document.write("console 창 색깔 구분 !!<br />");
+var thisYear = "2024";
+console.log(thisYear);
+document.write("< 결과 ><br />");
+var $img_026 =
+  "<img src='./img/console_str_black.png' alt='문자형 콘솔 창 색깔' width='900'>";
+document.write($img_026, "<br />");
+document.write("결과 해석 : 문자형은 console 창에서 검은색으로 나온다.<br />");
+var $img_027 =
+  "<img src='./img/str_black_code.png' alt='문자형 콘솔 창 색깔 코드' width='250'>";
+document.write("< 코드 ><br />");
+document.write($img_027, "<br /><br />");
+
+var nextYear = thisYear + 1;
+console.log(nextYear);
+document.write("< 결과 ><br />");
+var $img_028 =
+  "<img src='./img/console_str_black2.png' alt='문자형 콘솔 창 색깔2' width='900'>";
+document.write($img_028, "<br />");
+document.write(
+  "결과 해석 : 문자형 + 숫자형 이므로 문자형이 답으로 나오게 되어 console 창에서 검은색으로 표현이 된다.<br />"
+);
+var $img_029 =
+  "<img src='./img/str_black_code2.png' alt='문자형 콘솔 창 색깔 코드2' width='250'>";
+document.write("< 코드 ><br />");
+document.write($img_029, "<br /><br />");
+
+var nextYearNum = Number(thisYear) + 1;
+console.log(nextYearNum);
+document.write("< 결과 ><br />");
+var $img_030 =
+  "<img src='./img/console_num_blue.png' alt='숫자형 콘솔 창 색깔' width='900'>";
+document.write($img_030, "<br />");
+document.write(
+  "결과 해석 : 숫자형 + 숫자형 이므로 숫자형이 답으로 나오게 되어 console 창에서 파란색으로 표현이 된다.<br />"
+);
+var $img_031 =
+  "<img src='./img/num_blue_code.png' alt='숫자형 콘솔 창 색깔 코드' width='350'>";
+document.write("< 코드 ><br />");
+document.write($img_031, "<br /><br />");
+
+// 이런 걸 어디에 쓸까??
+document.write("< 언제 문자형과 숫자형을 구분하여 사용할까?? ><br /><br />");
+document.write(
+  "쇼핑몰 가격정보 '10,000'처럼 ,가 들어가면 문자형이 된다.<br />"
+);
+document.write(",가 들어가면 숫자형으로 표현을 못 한다.<br />");
+document.write(
+  "40% 할인이라면 10000 * 0.6(숫자형 계산) => '6,000'(문자형으로 변환)이 되어야 한다.<br /><br />"
+);
+
+// 태그를 포함한 문자형 데이터를 브라우저에 표현하기
+document.write(
+  "< 태그를 포함한 문자형 데이터를 브라우저에 표현하기 ><br /><br />"
+);
+document.write("< 결과 >");
+var $str_title = "<h4 class='title'>카카오 프렌즈</h4>";
+document.write($str_title);
+var $str_img = "<img src='./img/kakao.gif'/><br />";
+document.write($str_img);
+var $img_032 =
+  "<img src='./img/title_kakao.png' alt='태그를 포함한 이미지 코드' width='450'>";
+document.write("< 코드 ><br />");
+document.write("코드 해석<br />");
+document.write("../가 아닌 ./으로 하는 이유<br />");
+document.write("index.html에서 img로 가는 경우인 것이기 때문이다.<br />");
+document.write(
+  "자바스크립트에서 선언된 미디어 소스 정보는 그냥 문자 선언에 불과하다.<br />최종적으로 문자가 도달하는 공간을 기준으로 경로 설정을 해주어야 한다.<br />"
+);
+document.write($img_032, "<br /><br />");
+document.write("아래는 style.css 코드<br />");
+var $img_033 =
+  "<img src='./img/title_css.png' alt='태그를 포함한 이미지 코드2' width='200'>";
+document.write($img_033, "<br /><br />");
+
+// 실습문제
+var $str_title2 =
+  "<h4>실습 문제(문자형 데이터) img_1.jpg 파일을 브라우저에 출력해보기.<br /> \
+  (단, 300*200 공간에 구성(클래스명을 연동하여)한 후, 배경이미지로 미디어 파일을 연동</h4>";
+document.write($str_title2);
+document.write("< 결과 >");
+var $str_bg =
+  "<div class='str_bg' style='background-image:url(./img/img_1.jpg)'></div>";
+document.write($str_bg, "<br />");
+var $img_034 = "<img src='./img/p1.png' alt='실습 문제 코드1' width='600'>";
+document.write("< 코드 ><br />");
+document.write("코드 해석<br />");
+document.write("url 안에 큰 따옴표를 넣으면 안됨!!<br />");
+document.write(
+  "bgi를 style.css에 넣으려면 경로를 ../img/img_1.jpg로 해야 함!!<br />"
+);
+document.write($img_034, "<br /><br />");
+document.write("아래는 style.css 코드<br />");
+var $img_035 = "<img src='./img/p1_2.png' alt='실습 문제 코드2' width='250'>";
+document.write($img_035, "<br /><br />");
+
+// 숫자형을 문자형으로 변경시 사용되는 메서드(명령)
+document.write("< 숫자형을 문자형으로 변경시 사용되는 메서드(명령) ><br />");
+document.write("String(변수명), 변수명.toString()");
