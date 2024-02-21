@@ -416,4 +416,140 @@ document.write($img_035, "<br /><br />");
 
 // 숫자형을 문자형으로 변경시 사용되는 메서드(명령)
 document.write("< 숫자형을 문자형으로 변경시 사용되는 메서드(명령) ><br />");
-document.write("String(변수명), 변수명.toString()");
+document.write("String(변수명), 변수명.toString()<br /><br />");
+
+// #8. 숫자형 데이터
+document.write(" <p style='font-size:16px'>#8. 숫자형 데이터</p>");
+document.write("형변환<br />");
+document.write("Number(변수명) : 문자형 -> 숫자형<br />");
+document.write(
+  "parseInt(변수명) : 문자형 -> 정수 숫자형(소수점 이하는 버린다.)<br />"
+);
+document.write("parseFloat(변수명) : 문자형 -> 실수 숫자형<br />");
+document.write("수 > 실수 > 정수<br /><br />");
+
+// #8-1. Number("3.14");
+document.write("< 결과 ><br />");
+var $img_036 =
+  "<img src='./img/Number_rst.png' alt='Number() 결과' width='900'>";
+document.write($img_036, "<br />");
+var $no_01 = Number("3.14");
+console.log($no_01);
+var $img_037 = "<img src='./img/Number.png' alt='Number() 코드' width='350'>";
+document.write("< 코드 ><br />");
+document.write($img_037, "<br /><br />");
+
+// #8-2. paresInt("3.14");
+document.write("< 결과 ><br />");
+document.write(
+  "결과 해석 : 소수점 아래는 반올림을 하지 않고 그냥 버린다.<br />"
+);
+var $img_038 =
+  "<img src='./img/parseInt_rst.png' alt='parseInt() 결과' width='900'>";
+document.write($img_038, "<br />");
+var $no_02 = parseInt("3.14");
+console.log($no_02);
+var $img_039 =
+  "<img src='./img/parseInt.png' alt='parseInt() 코드' width='350'>";
+document.write("< 코드 ><br />");
+document.write($img_039, "<br /><br />");
+
+// #8-3. parseFloat("3.14");
+document.write("< 결과 ><br />");
+var $img_040 =
+  "<img src='./img/parseFloat_rst.png' alt='parseFloat() 결과' width='900'>";
+document.write($img_040, "<br />");
+var $no_03 = parseFloat("3.14");
+console.log($no_03);
+console.log(typeof $no_03);
+console.log(typeof "3.14");
+var $img_041 =
+  "<img src='./img/parseFloat.png' alt='parseFloat() 코드' width='350'>";
+document.write("< 코드 ><br />");
+document.write($img_041, "<br /><br />");
+
+// #9. 논리형 데이터
+document.write(
+  " <p style='font-size:16px'>#9. 논리형 데이터(boolean) : true 또는 false</p>"
+);
+document.write(
+  'true, false는 ""로 감싸면 안된다. -> 숫자형이 아님에도 console 창을 보면 파란색으로 나온다.<br /><br /> '
+);
+// 언제 사용??
+document.write("언제 논리형 데이터를 사용할까??<br /><br />");
+// 1. 페이지 넘길 때 사용
+document.write("<1> 페이지를 넘길 때 사용(두 수에 대한 비교)<br />");
+document.write(
+  "<<, < 표시 있을 때, << 누르면 바로 1페이지로 넘어가는 경우 같은 것에서 사용<br />"
+);
+document.write("< 결과 ><br />");
+var $img_042 =
+  "<img src='./img/boolean_rst.png' alt='boolean 비교 결과' width='900'>";
+document.write($img_042, "<br />");
+var thanNum = 24 < 13;
+console.log(thanNum);
+var boolTxt = true;
+console.log(boolTxt);
+var $img_043 =
+  "<img src='./img/boolean.png' alt='boolean 비교 코드' width='230'>";
+document.write("< 코드 ><br />");
+document.write($img_043, "<br /><br />");
+
+// 2. 페이스북 가입연령
+document.write("<2> 페이스북 가입연령<br />");
+document.write("< 결과 ><br />");
+var kidAge = 12; // 가입하고자 하는 사용자의 나이 데이터
+var facebookRegisterPermit = kidAge > 13;
+document.write(`페이스북 가입 가능여부 : ${facebookRegisterPermit}`, "<br />");
+var $img_044 =
+  "<img src='./img/facebook.png' alt='페이스북 가입 가능여부 코드' width='600'>";
+document.write("< 코드 ><br />");
+document.write($img_044, "<br /><br />");
+
+// 3. 카톡 전송버튼
+document.write(
+  "<3> 카톡에서 어떠한 값도 입력하지 않은 상태에서 전송버튼을 클릭했다면??<br />"
+);
+document.write("< 결과 ><br />");
+var bool_01 = Boolean("");
+document.write(bool_01, "<br />");
+var bool_02 = Boolean("솜사탕");
+document.write(bool_02, "<br />");
+document.write("결과 해석<br />");
+document.write("입력한 값이 하나도 없으면 -> false<br />");
+document.write("입력한 값이 하나라도 있으면 -> true<br />");
+var $img_045 =
+  "<img src='./img/katalk.png' alt='카톡 전송버튼 누르기 코드' width='350'>";
+document.write("< 코드 ><br />");
+document.write($img_045, "<br /><br />");
+
+// #10. undefined
+document.write(
+  " <p style='font-size:16px'>#10. undefined : 변수명만 존재하고 어떠한 값도 대입하지 않은 경우</p>"
+);
+document.write("초기 데이터가 없거나 또는 전달받은 데이터가 없는 경우<br />");
+document.write("< 결과 ><br />");
+var boul;
+document.write(boul, "<br />");
+console.log(boul);
+var $img_046 =
+  "<img src='./img/undefined_rst.png' alt='undefined 결과' width='900'>";
+document.write($img_046, "<br />");
+var $img_047 =
+  "<img src='./img/undefined.png' alt='undefined 코드' width='350'>";
+document.write("< 코드 ><br />");
+document.write($img_047, "<br /><br />");
+
+// #11. null
+document.write(
+  " <p style='font-size:16px'>#11. null : 처음부터 유효한 값이 아니라고 정의하거나, 값이 없음이라고 선언한 상태</p>"
+);
+document.write("< 결과 ><br />");
+var noValue = null;
+document.write(noValue, "<br />");
+console.log(noValue);
+var $img_048 = "<img src='./img/null_rst.png' alt='null 결과' width='900'>";
+document.write($img_048, "<br />");
+var $img_049 = "<img src='./img/null.png' alt='null 코드' width='350'>";
+document.write("< 코드 ><br />");
+document.write($img_049, "<br /><br />");
