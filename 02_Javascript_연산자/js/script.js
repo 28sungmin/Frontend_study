@@ -271,3 +271,11 @@ document.write("< 코드 ><br />");
 var $img_18 =
   "<img src='./img/num_plus.png' alt='복합대입연산자 코드' width='270'>";
 document.write($img_18, "<br /><br />");
+
+//#4. 증감연산자
+document.write("<h4>#4. 증감연산자</h4>");
+document.write("- 증가연산자(1씩 더한다) : ++변수명, 변수명++<br />");
+document.write("- 감소연산자(1씩 빼준다) : --변수명, 변수명--<br />");
+
+var pd_num = 12;
+document.write(`A 상품의 개수 : ${pd_num}개`, "<br />");
