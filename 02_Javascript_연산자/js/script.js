@@ -274,8 +274,25 @@ document.write($img_18, "<br /><br />");
 
 //#4. 증감연산자
 document.write("<h4>#4. 증감연산자</h4>");
-document.write("- 증가연산자(1씩 더한다) : ++변수명, 변수명++<br />");
-document.write("- 감소연산자(1씩 빼준다) : --변수명, 변수명--<br />");
+document.write("- 증가 연산자(1씩 더한다) : ++변수명, 변수명++<br />");
+document.write("- 감소 연산자(1씩 빼준다) : --변수명, 변수명--<br /><br />");
 
+document.write("< 초기 값 ><br />");
 var pd_num = 12;
 document.write(`A 상품의 개수 : ${pd_num}개`, "<br />");
+document.write("< 코드 ><br />");
+var $img_19 =
+  "<img src='./img/plus_1.png' alt='복합대입연산자 코드' width='500'>";
+document.write($img_19, "<br /><br />");
+
+document.write("< 결과 ><br />");
+
+// pd_num = pd_num + 1
+++pd_num;
+document.write(`A 상품의 개수 + 1 : ${pd_num}개`, "<br />");
+pd_num++;
+document.write(`A 상품의 개수 + 1 : ${pd_num}개`, "<br />");
+document.write("< 코드 ><br />");
+var $img_20 =
+  "<img src='./img/plus_2.png' alt='복합대입연산자 코드' width='500'>";
+document.write($img_20, "<br /><br />");
