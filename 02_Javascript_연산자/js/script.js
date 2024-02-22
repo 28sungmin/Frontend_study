@@ -273,7 +273,7 @@ var $img_18 =
 document.write($img_18, "<br /><br />");
 
 //#4. 증감연산자
-document.write("<h4>#4. 증감연산자</h4>");
+document.write("<h3>#4. 증감연산자</h3>");
 document.write("- 증가 연산자(1씩 더한다) : ++변수명, 변수명++<br />");
 document.write("- 감소 연산자(1씩 빼준다) : --변수명, 변수명--<br /><br />");
 
@@ -281,8 +281,7 @@ document.write("< 초기 값 ><br />");
 var pd_num = 12;
 document.write(`A 상품의 개수 : ${pd_num}개`, "<br />");
 document.write("< 코드 ><br />");
-var $img_19 =
-  "<img src='./img/plus_1.png' alt='복합대입연산자 코드' width='500'>";
+var $img_19 = "<img src='./img/plus_1.png' alt='초기값 코드' width='500'>";
 document.write($img_19, "<br /><br />");
 
 document.write("< 결과 ><br />");
@@ -293,6 +292,141 @@ document.write(`A 상품의 개수 + 1 : ${pd_num}개`, "<br />");
 pd_num++;
 document.write(`A 상품의 개수 + 1 : ${pd_num}개`, "<br />");
 document.write("< 코드 ><br />");
-var $img_20 =
-  "<img src='./img/plus_2.png' alt='복합대입연산자 코드' width='500'>";
+var $img_20 = "<img src='./img/plus_2.png' alt='증가연산자 코드' width='500'>";
 document.write($img_20, "<br /><br />");
+
+// pd_num = pd_num - 1
+document.write("< 결과 ><br />");
+--pd_num;
+document.write(`A 상품의 개수 - 1 : ${pd_num}개`, "<br />");
+pd_num--;
+document.write(`A 상품의 개수 - 1 : ${pd_num}개`, "<br />");
+document.write("< 코드 ><br />");
+var $img_21 = "<img src='./img/minus_1.png' alt='감소연산자 코드' width='500'>";
+document.write($img_21, "<br /><br />");
+
+// 선행처리와 후행처리
+document.write("<h4>증감연산자 - 선행처리 vs 후행처리</h4>");
+document.write("선행처리 : ++변수명 또는 --변수명<br />");
+document.write("후행처리 : 변수명++ 또는 변수명--<br />");
+document.write(
+  "위의 경우처럼 혼자서 단독으로 쓰이는 경우는 선행처리와 후행처리를 신경쓸 필요가 없다.<br /><br />"
+);
+
+document.write("< 선행처리 결과 ><br />");
+var $a = 10;
+var $b;
+$b = ++$a;
+document.write(`$a의 결과값 : ${$a}`, "<br />");
+document.write(`$b의 결과값 : ${$b}`, "<br />");
+document.write("< 코드 ><br />");
+var $img_22 =
+  "<img src='./img/first_plus.png' alt='증가연산자 선행처리 코드' width='400'>";
+document.write($img_22, "<br /><br />");
+
+document.write("< 후행처리 결과 ><br />");
+var $c = 10;
+var $d;
+$d = $c++;
+document.write(`$c의 결과값 : ${$c}`, "<br />");
+document.write(`$d의 결과값 : ${$d}`, "<br />");
+document.write("< 코드 ><br />");
+var $img_22 =
+  "<img src='./img/later_plus.png' alt='증가연산자 후행처리 코드' width='400'>";
+document.write($img_22, "<br /><br />");
+
+var a = 1;
+var b = a++;
+console.log(a);
+console.log(b);
+document.write("< 결과 ><br />");
+var $img_23 =
+  "<img src='./img/later_plus_console.png' alt='증가연산자 후행처리 결과' width='900'>";
+document.write($img_23, "<br />");
+document.write("< 코드 ><br />");
+var $img_24 =
+  "<img src='./img/later_plus2.png' alt='증가연산자 후행처리 코드' width='150'>";
+document.write($img_24, "<br /><br />");
+
+var c = 1;
+var c = c++;
+console.log(c);
+document.write("< 결과 ><br />");
+var $img_25 =
+  "<img src='./img/later_plus_console2.png' alt='증가연산자 후행처리 결과' width='900'>";
+document.write($img_25, "<br />");
+document.write(
+  "결과 해석 : 좌변의 c, 즉 값이 담기는 그릇이 중요한 거다. 처음에 1이 담긴 것이므로 답은 1이다.<br />"
+);
+document.write("< 코드 ><br />");
+var $img_26 =
+  "<img src='./img/later_plus3.png' alt='증가연산자 후행처리 코드' width='150'>";
+document.write($img_26, "<br /><br />");
+
+document.write("선행처리와 후행처리를 그림으로 표현하면 아래와 같다.<br />");
+var $img_27 =
+  "<img src='./img/first_later_explain.jpeg' alt='선행처리 후행처리 설명' width='600'>";
+document.write($img_27, "<br /><br />");
+
+// 비교연산자
+document.write("<h3>#5. 비교연산자</h3>");
+document.write("결과값은 true 또는 false만 나온다.<br />");
+
+var $p = 10;
+var $q = 12;
+var $r = "10";
+var $result_than;
+
+document.write("< 변수 ><br />");
+var $img_28 =
+  "<img src='./img/var_result_than.png' alt='비교연산자 변수' width='200'>";
+document.write($img_28, "<br /><br />");
+
+document.write("< 결과 ><br />");
+// 10 <= 12 -> true
+$result_than = $p <= $q;
+document.write($result_than, "<br />");
+document.write("< 코드 ><br />");
+var $img_29 =
+  "<img src='./img/result_than_okay1.png' alt='비교연산자 올바른 경우 코드' width='350'>";
+document.write($img_29, "<br /><br />");
+
+document.write("< 결과 ><br />");
+// "10" <= 12
+$result_than = $r <= $q;
+document.write($result_than, "<br />");
+document.write(
+  "결과 해석 : 원칙상 안되는 것이지만, js는 중간중간 취약한 부분들이 있는데, 그 부분들 중에 하나이다.<br />"
+);
+document.write("< 코드 ><br />");
+var $img_30 =
+  "<img src='./img/result_than_problem.png' alt='비교연산자 올바른 경우 코드' width='350'>";
+document.write($img_30, "<br /><br />");
+
+// ==와 === 비교
+document.write("<h4>== 와 === 비교 </h4>");
+document.write(
+  "같다(==) : 데이터의 타입에 관계없이 화면상 출력되는 값이 같다면 동일여부로 판단<br />"
+);
+document.write(
+  "정말~같다(===) : 데이터의 타입과 화면상의 출력되는 값이 모두 같아야 동일여부로 판단<br /><br />"
+);
+document.write("< 결과 ><br />");
+$result_than = $p == $r;
+document.write($result_than, "<br />");
+document.write("< 코드 ><br />");
+var $img_31 = "<img src='./img/same.png' alt='== 연산자 코드' width='350'>";
+document.write($img_31, "<br /><br />");
+
+document.write("< 결과 ><br />");
+$result_than = $p === $r;
+document.write($result_than, "<br />");
+document.write("결과 해석 : 정확성을 위해서는 이것을 써주는게 좋다.<br />");
+document.write("< 코드 ><br />");
+var $img_32 =
+  "<img src='./img/all_same.png' alt='=== 연산자 코드' width='350'>";
+document.write($img_32, "<br /><br />");
+
+document.write("주의 !!<br />");
+document.write("(변수명 >= 변수명) ===> 비교연산자<br />");
+document.write("(변수명 => 변수명) ===> 화살표 함수<br />");
