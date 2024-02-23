@@ -430,3 +430,143 @@ document.write($img_32, "<br /><br />");
 document.write("주의 !!<br />");
 document.write("(변수명 >= 변수명) ===> 비교연산자<br />");
 document.write("(변수명 => 변수명) ===> 화살표 함수<br />");
+
+// #6. 논리연산자
+document.write("<h3>#6. 논리연산자</h3>");
+document.write("|| (or 연산자 - 구글 검색)<br />");
+document.write("&& (and 연산자 - 하나투어 검색))<br />");
+document.write("! (부정연산자 - 데이터의 유무를 판단하는 조건으로 적용)<br />");
+document.write("---------------<br />");
+document.write("< 예시 ><br />");
+document.write(
+  '구글 검색에는 "이집트 경복궁" 이라고 치면 각각에 대한 검색결과와 모두에 대한 검색결과가 나오지만, 하나투어에는 검색결과가 아예 나오지 않는다.<br /><br /> '
+);
+
+var $s = 10;
+var $t = 12;
+var $u = 14;
+
+document.write("< 변수 ><br />");
+var $img_33 =
+  "<img src='./img/var_boolean.png' alt='논리연산자 변수' width='150'>";
+document.write($img_33, "<br /><br />");
+
+document.write("<h4>or 연산자</h4>");
+document.write("< 결과 ><br />");
+// or 연산자
+// false || true -> true
+document.write($s > $t || $t < $u, "<br />");
+document.write(
+  "결과 해석 : false || true -> true 즉, 하나라도 true가 존재하면 모두 true 처리한다.<br />"
+);
+document.write("------------------------<br />");
+document.write("true || false -> true<br />");
+document.write(
+  "로딩상 맨 처음 true와 || 연산자를 만나는 순간 그 후발주자는 로딩하지 않음 -> 따라서 절대적으로 true인 부분은 맨 뒤에 배치한다.<br />"
+);
+document.write("< 코드 ><br />");
+var $img_34 = "<img src='./img/or.png' alt='or 연산자 코드' width='350'>";
+document.write($img_34, "<br /><br />");
+
+document.write("<h4>and 연산자</h4>");
+document.write("< 결과 ><br />");
+// and 연산자
+// false && true -> false
+document.write($s > $t && $t < $u, "<br />");
+document.write(
+  "결과 해석 : false && true -> true 즉, 하나라도 false가 존재하면 모두 false 처리한다.<br />"
+);
+document.write("------------------------<br />");
+document.write("false && true -> false<br />");
+document.write(
+  "로딩상 맨 처음 false와 && 연산자를 만나는 순간 그 후발주자는 로딩하지 않음 -> 따라서 절대적으로 false인 부분은 맨 뒤에 배치한다. <br />"
+);
+document.write("< 코드 ><br />");
+var $img_35 = "<img src='./img/and.png' alt='and 연산자 코드' width='350'>";
+document.write($img_35, "<br /><br />");
+
+// 부정연산자(!변수명)
+document.write("<h4>부정연산자(!변수명)</h4>");
+document.write(
+  "변수가 true였다면 false로 출력해라 / 변수가 false였다면 true로 출력해라<br /><br />"
+);
+var $v = 10 > 8; // true
+document.write("< 결과 ><br />");
+document.write(`부정연산자 결과값 : ${!$v}`, "<br />");
+document.write("< 코드 ><br />");
+var $img_36 = "<img src='./img/not1.png' alt='부정연산자 코드' width='400'>";
+document.write($img_36, "<br /><br />");
+
+var $data1 = Boolean("");
+var $data2 = Boolean(" ");
+var $data3 = Boolean("a");
+console.log(`$data1 : ${$data1}`);
+console.log(`$data2 : ${$data2}`);
+console.log(`$data3 : ${$data3}`);
+console.log(`!$data1 : ${!$data1}`);
+console.log(`!$data2 : ${!$data2}`);
+console.log(`!$data3 : ${!$data3}`);
+
+document.write("< 결과 ><br />");
+var $img_37 = "<img src='./img/not2.png' alt='논리연산자 코드' width='400'>";
+document.write($img_37, "<br />");
+document.write(
+  '결과 해석 : Boolean("")이면 $data는 false이다. 그러나 Boolean(" ")이면 $data는 true이다.<br />'
+);
+document.write("즉, 데이터가 있으면 true, 없으면 false 이다.<br />");
+document.write("< 코드 ><br />");
+var $img_38 =
+  "<img src='./img/not_console.png' alt='논리연산자 결과' width='900'>";
+document.write($img_38, "<br /><br />");
+
+// 삼항조건 연산자
+document.write("<h3>#7. 삼항조건 연산자</h3>");
+document.write("변수명의 true 또는 false에 의해서 실행되는 구문을 분리<br />");
+document.write(
+  "react에서는 제어문 중 조건문을 사용시 if()문을 사용할 수 없음(에러처리) / 대신 삼항조건연산자로 조건식을 구성할 수 있음<br />"
+);
+document.write("----------------------------<br />");
+document.write('변수명 ? "A" : "B"<br />');
+document.write('변수명의 값이 true일 경우, "A"를 출력<br />');
+document.write('변수명의 값이 false일 경우, "B"를 출력<br />');
+
+// var thanMore13 = prompt("나이를 입력해주세요", "13");
+// var registerPermit = thanMore13 > 13;
+// console.log(registerPermit);
+// registerPermit
+//   ? console.log("가입 가능 연령입니다.")
+//   : console.log("가입 불가 연령입니다.");
+
+document.write("< 결과 ><br />");
+var $img_39 =
+  "<img src='./img/conditional_13_result.png' alt='삼항조건 연산자 조건 불가능 결과' width='900'>";
+document.write($img_39, "<br />");
+document.write("< 코드 ><br />");
+var $img_40 =
+  "<img src='./img/conditional_13.png' alt='삼항조건 연산자 조건 불가능 코드' width='350'>";
+document.write($img_40, "<br /><br />");
+
+document.write("< 결과 ><br />");
+var $img_41 =
+  "<img src='./img/conditional_15_result.png' alt='삼항조건 연산자 조건 가능 결과' width='900'>";
+document.write($img_41, "<br />");
+document.write("< 코드 ><br />");
+var $img_42 =
+  "<img src='./img/conditional_15.png' alt='삼항조건 연산자 조건 가능 코드' width='350'>";
+document.write($img_42, "<br /><br />");
+
+// 응용파트
+document.write("<h4>응용파트</h4>");
+document.write(
+  "airbnb의 회원 아이디 중 첫번째 번호를 기준으로 호스트(1xxxxxxx), 게스트(2xxxxxxx) 분류시켰다고 가정시<br /><br />"
+);
+
+document.write("< 결과 ><br />");
+var memIdNum = 1;
+memIdNum % 2 == 0
+  ? document.write("게스트 메뉴", "<br />")
+  : document.write("호스트 메뉴", "<br />");
+document.write("< 코드 ><br />");
+var $img_43 =
+  "<img src='./img/airbnb.png' alt='삼항조건 연산자 응용파트 코드' width='350'>";
+document.write($img_43, "<br /><br />");
