@@ -6,11 +6,98 @@
 } */
 
 /* 태그 선택자 */
-/* h3 {
+h3 {
   color: blueviolet;
-} */
+}
 
 /* 클래스 선택자 */
 .class_selector {
   background-color: #f90;
+}
+.hit {
+  color: #00f;
+}
+.select_ice {
+  color: mintcream;
+}
+.num_1 {
+  color: red;
+}
+.슈팅 {
+  color: chartreuse;
+}
+.스타 {
+  background-color: #ccc;
+}
+
+/* 아이디 선택자 */
+/* 같은 요소에 복수의 아이디명 선언 불가 */
+#car_1 {
+  background-color: #faa;
+}
+#txt_id {
+  font-size: 20px;
+}
+/* 동일한 아이디명이 한 문서상에 존재할 때 CSS 상에서는 적용 가능 */
+#car {
+  background-color: #faf;
+}
+
+/* 자식선택자 */
+.menu > li {
+  background-color: #ffa;
+}
+.menu > li > a {
+  background-color: #aff;
+}
+.menu > li > ul > li > a {
+  background-color: #ddd;
+}
+/* 자손선택자 */
+.menu a.detail {
+  color: #fff;
+}
+
+/* 인접선택자 */
+.cur_page + li {
+  background-color: #faa;
+}
+.cur_page + li + li {
+  background-color: #afa;
+}
+.cur_page + li + li + li {
+  background-color: #a0f;
+}
+.cur_page + li + li + li > a {
+  color: #fff;
+}
+.target_page + li {
+  border: 2px solid #f00;
+}
+
+/* 내림 형제 선택자 */
+.current ~ .partner {
+  background-color: #aaf;
+}
+
+/* 복수(병렬) 선택자 */
+.several_selector p,
+.several_selector h5 {
+  font-size: 24px;
+}
+.several_selector p,
+h5 {
+  background-color: #faa;
+}
+.several_selector p,
+.target_lang {
+  color: #09f;
+}
+
+/* 가상 공간 선택자 */
+.virtual_space::before {
+  content: "맛있는 ";
+}
+.virtual_space::after {
+  content: " : 마라탕";
 }

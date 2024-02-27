@@ -23,6 +23,9 @@
       클래스 선택자(.클래스명) : 태그 내부에 클래스(class)속성을 추가하여 그
       속성이 담고 있는 속성값을 기준으로 스타일을 선언하고자 할 때 사용
     </h3>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/class_div.png" alt="클래스" width="300" />
+    <img src="./img/class.png" alt="클래스 선택자 이미지" width="200" />
     <div class="class_selector">
       <p class="num_1">바람과 함께 사라지다</p>
       <p class="hit">아몬드 봉봉</p>
@@ -30,5 +33,160 @@
       <p class="select_ice hit">민트초코</p>
       <p class="슈팅 스타">슈팅스타</p>
     </div>
+    <h4>클래스 선택자 선언 시 주의사항</h4>
+    <p>
+      1. 클래스명을 선언 시 첫 글자는 숫자 불가 (단, 영문 이후에 포함되는 숫자는
+      상관없음)
+    </p>
+    <p>
+      2. 클래스명은 복수의 클래스명으로 선언이 가능 (복수 선언시, 반드시 한 칸을
+      띄우고 작성)
+    </p>
+    <p>
+      3. 클래스명 선언 시, 반드시 의미있는 이름으로 지어주는 것이 중요
+      (인수인계시 중요)
+    </p>
+    <p>4. 클래스명으로 두 단어를 연결 시, 단어_단어 또는 wordWord</p>
+    <p>5. 클래스명은 재활용이 가능 (<->아이디 선택자)</p>
+
+    <h3>
+      아이디 선택자(#아이디명) : 태그 내부에 id라는 속성을 선언하여 아이디명을
+      기준으로 스타일을 적용하고자 할 때 사용
+    </h3>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/id_div.png" alt="아이디" width="400" />
+    <img src="./img/id.png" alt="아이디 선택자 이미지" width="400" />
+
+    <p>&lt; 결과 설명 &gt;</p>
+    <p>
+      id가 car_1 myCar인 요소 : 복수의 아이디명이 선언되었으므로 css가 적용이
+      안되었다.
+    </p>
+    <p>
+      id가 car인 요소 2개 : css는 2개의 요소 모두에 적용이 되지만, 아래
+      script에서 작성한 js 같은 경우는
+    </p>
+
+    <div id="id_selector">
+      <p id="car_1 myCar">소나타</p>
+      <p id="txt_id">산타페</p>
+      <p id="car">아반떼</p>
+      <p id="car">투싼</p>
+    </div>
+    <script>
+      document.getElementById("car").style.color = "orange";
+    </script>
+    <h4>아이디 선택자 선언 시 주의사항</h4>
+    <p>
+      1. 아이디명을 선언 시, 첫 글자는 숫자 불가 (단, 영문 이후에 포함되는
+      숫자는 상관없음)
+    </p>
+    <p>2. 아이디명은 복수의 아이디명의 선언이 불가능</p>
+    <p>
+      3. 아이디명 선언 시, 반드시 의미있는 이름으로 지어주는 것이 중요
+      (인수인계시 중요)
+    </p>
+    <p>4. 아이디명으로 두 단어를 연결 시, 단어_단어 또는 wordWord</p>
+    <p>
+      5. 동일한 아이디명은 한 HTML 문서에서 존재 불가 = 아이디명은 재활용 불가능
+      (두 명이 동일한 주민등록번호를 갖고 있는 경우) => (CSS 상에서는 스타일
+      적용이 되나, JS에서는 첫 번째 선언된 아이디명에만 동적 적용이 가능)
+    </p>
+    <p>
+      6. 아이디 선택자는 구조상 큰 규모를 대상으로 작성하는 것이 좋다. (명시도
+      부분에서 1개의 아이디당 100점)
+    </p>
+
+    <h3>자식선택자(부모 > 자식) / 자손선택자(조상 후손)</h3>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/child_div.png" alt="아이디" width="400" />
+    <img src="./img/child.png" alt="아이디 선택자 이미지" width="200" />
+
+    <ul class="menu">
+      <li>
+        <a href="">회사소개</a>
+      </li>
+      <li>
+        <a href="">경영소개</a>
+      </li>
+      <li>
+        <a href="">제품소개</a>
+        <ul>
+          <li><a class="detail" href="">기계제품</a></li>
+          <li><a href="">화학제품</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="">고객센터</a>
+      </li>
+    </ul>
+
+    <h3>
+      인접선택자(형 + 동생) : 문서상 형제 서열이 낮은 순으로 접근할 때 사용
+    </h3>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/brother_div.png" alt="아이디" width="200" />
+    <img src="./img/brother.png" alt="아이디 선택자 이미지" width="300" />
+    <ul class="brother_selector">
+      <li class="cur_page">
+        <a href="">About</a>
+      </li>
+      <li>
+        <a href="">Project</a>
+      </li>
+      <li class="target_page">
+        <a href="">Portfolio</a>
+      </li>
+      <li>
+        <a href="">Contact</a>
+      </li>
+    </ul>
+
+    <h3>
+      내림 형제 선택자(형 ~ 동생) : 형제간 서열이 낮은 어딘가의 동생을 선택할 때
+      사용
+    </h3>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/brother~_div.png" alt="아이디" width="300" />
+    <img src="./img/brother~.png" alt="아이디 선택자 이미지" width="200" />
+    <ul class="brother_selector2">
+      <li class="current">
+        <a href="">브랜드</a>
+      </li>
+      <li>
+        <a href="">주요메뉴</a>
+      </li>
+      <li class="partner">
+        <a href="">파트너쉽</a>
+      </li>
+      <li>
+        <a href="">이벤트</a>
+      </li>
+    </ul>
+
+    <h3>
+      복수(병렬) 선택자 (선택자1, 선택자2, ...) : 한번에 여러가지를 선택하여
+      동일한 스타일 적용시 사용
+    </h3>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/parallel_div.png" alt="아이디" width="300" />
+    <img src="./img/parallel.png" alt="아이디 선택자 이미지" width="200" />
+    <div class="several_selector">
+      <p>HTML5</p>
+      <span>CSS3</span>
+      <h5>Javascript</h5>
+    </div>
+    <h5 class="target_lang">React</h5>
+    <p>
+      병렬선택자 작성시, 상하위 개념을 적용시켜 주어야 타겟팅된 구조만 스타일을
+      적용할 수 있음
+    </p>
+
+    <h3>가상 공간 선택자(선택자::before / 선택자::after)</h3>
+    <p class="virtual_space">레시피</p>
+    <p>
+      1차 코딩에서는 가급적이면 사용하지말고 추후 급한 요구사항 처리시 활용하면
+      좋음
+    </p>
   </body>
 </html>
