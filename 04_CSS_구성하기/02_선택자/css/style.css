@@ -101,3 +101,46 @@ h5 {
 .virtual_space::after {
   content: " : 마라탕";
 }
+
+/* 마우스 오버 관련 선택자 */
+.change_bg {
+  width: 240px;
+  height: 240px;
+  background-color: #ff7;
+  transition: background-color 0.5s;
+}
+.change_bg:hover {
+  background-color: #f77;
+}
+
+.com_menu > li > a {
+  color: #777;
+  text-decoration: none;
+}
+.com_menu > li > a:hover {
+  color: #f00;
+  border-bottom: 1px solid #f00;
+}
+
+/* 링크 관련 가상 행동 선택자 */
+.a_focus {
+  color: red;
+}
+.a_focus:focus {
+  color: orange;
+}
+/* 웹 접근성 차원에서 작성 요구됨 */
+.a_active:active {
+  color: red;
+}
+
+/* 속성(attribute) 선택자 */
+.attr_selector1 [type] {
+  background-color: #ffc;
+}
+.attr_selector1 [type="password"] {
+  border: 2px solid #f0f;
+}
+.attr_selector1 [type^="em"] {
+  height: 40px;
+}

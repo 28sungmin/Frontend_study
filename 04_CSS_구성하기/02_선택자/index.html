@@ -99,8 +99,8 @@
 
     <h3>자식선택자(부모 > 자식) / 자손선택자(조상 후손)</h3>
     <p>&lt; 사용법 &gt;</p>
-    <img src="./img/child_div.png" alt="아이디" width="400" />
-    <img src="./img/child.png" alt="아이디 선택자 이미지" width="200" />
+    <img src="./img/child_div.png" alt="자식 선택자" width="400" />
+    <img src="./img/child.png" alt="자식 선택자 이미지" width="200" />
 
     <ul class="menu">
       <li>
@@ -125,8 +125,8 @@
       인접선택자(형 + 동생) : 문서상 형제 서열이 낮은 순으로 접근할 때 사용
     </h3>
     <p>&lt; 사용법 &gt;</p>
-    <img src="./img/brother_div.png" alt="아이디" width="200" />
-    <img src="./img/brother.png" alt="아이디 선택자 이미지" width="300" />
+    <img src="./img/brother_div.png" alt="인접" width="200" />
+    <img src="./img/brother.png" alt="인접 선택자 이미지" width="300" />
     <ul class="brother_selector">
       <li class="cur_page">
         <a href="">About</a>
@@ -147,8 +147,8 @@
       사용
     </h3>
     <p>&lt; 사용법 &gt;</p>
-    <img src="./img/brother~_div.png" alt="아이디" width="300" />
-    <img src="./img/brother~.png" alt="아이디 선택자 이미지" width="200" />
+    <img src="./img/brother~_div.png" alt="내림 형제 선택자" width="300" />
+    <img src="./img/brother~.png" alt="내림 형제 선택자 이미지" width="200" />
     <ul class="brother_selector2">
       <li class="current">
         <a href="">브랜드</a>
@@ -169,8 +169,8 @@
       동일한 스타일 적용시 사용
     </h3>
     <p>&lt; 사용법 &gt;</p>
-    <img src="./img/parallel_div.png" alt="아이디" width="300" />
-    <img src="./img/parallel.png" alt="아이디 선택자 이미지" width="200" />
+    <img src="./img/parallel_div.png" alt="복수 선택자" width="300" />
+    <img src="./img/parallel.png" alt="복수 선택자 이미지" width="200" />
     <div class="several_selector">
       <p>HTML5</p>
       <span>CSS3</span>
@@ -183,10 +183,69 @@
     </p>
 
     <h3>가상 공간 선택자(선택자::before / 선택자::after)</h3>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/virtual_p.png" alt="가상 공간 선택자" width="300" />
+    <img src="./img/virtual.png" alt="가상 공간 선택자 이미지" width="200" />
+
     <p class="virtual_space">레시피</p>
     <p>
       1차 코딩에서는 가급적이면 사용하지말고 추후 급한 요구사항 처리시 활용하면
       좋음
     </p>
+
+    <h3>
+      마우스 오버 관련 선택자(선택자:hover) : 마우스가 영역내부로 진입했을 때
+      스타일 변경시 사용
+    </h3>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/hover_div.png" alt="마우스 오버 관련 선택자" width="300" />
+    <img
+      src="./img/hover.png"
+      alt="마우스 오버 관련 선택자 이미지"
+      width="300"
+    />
+
+    <div class="change_bg"></div>
+
+    <ul class="com_menu">
+      <li><a href="">회사소개</a></li>
+      <li><a href="">오뚜기 제품</a></li>
+      <li><a href="">O' Kitchen</a></li>
+      <li><a href="">홍보센터</a></li>
+    </ul>
+
+    <h3>링크 관련 가상 행동 선택자</h3>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/link_a.png" alt="링크 관련 가상 행동 선택자" width="350" />
+    <img
+      src="./img/link.png"
+      alt="링크 관련 가상 활동 선택자 이미지"
+      width="200"
+    />
+    <p>&lt; 결과 해석 &gt;</p>
+    :focus => 신체 장애인(손 절단 장애인)에게 웹 접근성을 부여하기 위한 도구로
+    사용
+    <br />
+    :active => 특정 대상물에 클릭을 한 상태
+    <br />
+    요즘에는 잘 안써
+    <br /><br />
+    <a class="a_focus" href="">리스트항목 바로가기</a>
+    <a href="" class="a_active">active 활성화</a>
+
+    <h3>
+      속성(attribute) 선택자 : 태그 내부의 속성을 선택하여 스타일 적용시 사용
+    </h3>
+    <div class="attr_selector1">
+      <div><input type="text" placeholder="아이디 입력" /></div>
+      <div><input type="password" placeholder="패스워드 입력" /></div>
+      <div><input type="email" placeholder="이메일 입력" /></div>
+    </div>
+    <div class="attr_selector2">
+      <p class="dessert food">Bread</p>
+      <p class="food dessert tea">Coffee</p>
+      <p class="diet dishes">Steak</p>
+      <p class="cheeze diet">Pizza</p>
+    </div>
   </body>
 </html>
