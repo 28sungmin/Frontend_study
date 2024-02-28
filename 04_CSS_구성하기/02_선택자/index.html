@@ -236,6 +236,26 @@
     <h3>
       속성(attribute) 선택자 : 태그 내부의 속성을 선택하여 스타일 적용시 사용
     </h3>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/attr_div.png" alt="속성 선택자" width="400" />
+    <img src="./img/attr.png" alt="속성 선택자 이미지" width="250" />
+
+    <h4>
+      연속된 글자(띄어쓰기도 포함)의 위치에 따라 기호가 달라지는 속성 선택자
+    </h4>
+    <p>
+      선택자[속성명^="연속된 글자"] : 지정한 속성명의 속성값 내부에 연속된
+      글자로 시작되는 것만 선택(속성값의 시작 글자가 중요)
+    </p>
+    <p>
+      선택자[속성명$="연속된 글자"] : 지정한 속성명의 속성값 내부에 연속된
+      글자로 종료되는 것만 선택(속성값의 종료 글자가 중요)
+    </p>
+    <p>
+      선택자[속성명*="연속된 글자"] : 지정한 속성명의 속성값 내부에 연속된
+      글자가 포함된 것만 선택(시작과 종료 포함한 어디든 포함한 것이 중요)
+    </p>
+
     <div class="attr_selector1">
       <div><input type="text" placeholder="아이디 입력" /></div>
       <div><input type="password" placeholder="패스워드 입력" /></div>
@@ -246,6 +266,58 @@
       <p class="food dessert tea">Coffee</p>
       <p class="diet dishes">Steak</p>
       <p class="cheeze diet">Pizza</p>
+    </div>
+
+    <h3>수도 선택자 (나는 몇 번째 자식인가?)</h3>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/nth_div.png" alt="수도 선택자" width="200" />
+    <img src="./img/nth.png" alt="수도 선택자 이미지" width="250" />
+
+    <ul class="nth_selector">
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>Javascript</li>
+      <li>SQL</li>
+      <li>React</li>
+    </ul>
+
+    <h3>
+      종속 선택자 - 각 단계별로 요소를 선택하는 과정에서 필요한 구분자를 모두
+      가져와서 선택자에 담아서 사용한다.
+    </h3>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/contain_div.png" alt="종속 선택자" width="300" />
+    <img src="./img/contain.png" alt="종속 선택자 이미지" width="250" />
+    <div class="contain_selector1">
+      <p>아이폰15</p>
+      <p class="myFav">갤럭시24</p>
+      <p>아이패드</p>
+    </div>
+
+    <div class="contain_ex">
+      <div>Section-1</div>
+      <div id="space" class="place">Section-2</div>
+      <div>Section-3</div>
+      <div>Section-4</div>
+    </div>
+
+    <h3>
+      CSS 선택자의 명시도(점수부여법) - 대규모 프로젝트에서는 매우 중요한 부분임
+    </h3>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/clarify_div.png" alt="CSS 선택자의 명시도" width="400" />
+    <img src="./img/clarify.png" alt="CSS 선택자의 명시도 이미지" width="300" />
+    <h4>아이디 : 100점</h4>
+    <h4>클래스 : 10점</h4>
+    <h4>태그(요소) : 1점</h4>
+    <div id="css_score">
+      <p id="score" class="level">명시도에 의한 색상변환</p>
+    </div>
+
+    <div id="section">
+      <div class="part">
+        <p id="txt_test" class="txt_cont">문장 명시도 테스트</p>
+      </div>
     </div>
   </body>
 </html>

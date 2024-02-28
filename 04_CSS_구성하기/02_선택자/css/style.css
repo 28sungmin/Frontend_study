@@ -144,3 +144,87 @@ h5 {
 .attr_selector1 [type^="em"] {
   height: 40px;
 }
+.attr_selector1 [type$="xt"] {
+  border-radius: 8px;
+}
+.attr_selector1 [type*="ss"] {
+  background-color: #00f;
+  color: #fff;
+}
+
+.attr_selector2 p[class^="des"] {
+  color: #f70;
+}
+.attr_selector2 p[class*="des"] {
+  background-color: #fcf;
+}
+.attr_selector2 p[class$="et"] {
+  font-size: 24px;
+}
+
+/* 수도 선택자 */
+.nth_selector li:nth-child(2) {
+  color: red;
+}
+.nth_selector li:first-child {
+  background-color: #cff;
+}
+.nth_selector li:last-child {
+  background-color: #fcf;
+}
+
+.nth_selector li:nth-of-type(3) {
+  color: green;
+}
+.nth_selector li:first-of-type {
+  border-top: 4px solid blue;
+}
+.nth_selector li:last-of-type {
+  border-bottom: 4px solid red;
+}
+
+/* 종속 선택자 */
+div.contain_selector1 {
+  background-color: #faf;
+}
+div.contain_selector1 p[class^="my"] {
+  color: #fff;
+}
+
+/* Section-2의 색상을 red로 변경 */
+/* 1번 경우 */
+div.contain_ex div#space {
+  color: red;
+}
+/* 2번 경우 */
+div.contain_ex div.place {
+  color: red;
+}
+/* 3번 경우 */
+div.contain_ex div#space.place {
+  color: red;
+}
+
+/* CSS 선택자의 명시도 */
+#css_score #score {
+  color: #f00;
+}
+#css_score .level {
+  color: orange;
+}
+#css_score p {
+  color: blue;
+}
+
+#section .txt_cont {
+  /* 110점 */
+  background-color: #f99;
+}
+div#section .part p {
+  /* 112점 : div, p 요소가 2개가 있으므로 112점*/
+  background-color: #f70;
+}
+div .part #txt_test {
+  /* 111점 : div 요소 1개가 있으므로 111점*/
+  background-color: #7af;
+}
