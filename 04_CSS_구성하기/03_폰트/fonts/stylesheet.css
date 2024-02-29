@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Nanum Pen';
+    src: url('NanumPen.eot');
+    src: url('NanumPen.eot?#iefix') format('embedded-opentype'),
+        url('NanumPen.woff2') format('woff2'),
+        url('NanumPen.woff') format('woff'),
+        url('NanumPen.ttf') format('truetype'),
+        url('NanumPen.svg#NanumPen') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

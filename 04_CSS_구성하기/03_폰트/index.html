@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03_CSS_폰트</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h2>폰트 서체의 적용</h2>
+    <h3>1. 외부에서 서체를 가져온다.</h3>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/external_import.png" alt="외부 폰트" width="800" /><br />
+    <img src="./img/external.png" alt="외부 폰트" width="400" /><br />
+    <img src="./img/external_p.png" alt="외부 폰트" width="300" /><br />
+    <p>&lt; 결과 &gt;</p>
+    <p class="external_font">외부폰트 적용</p>
+
+    <h3>2. 자체 서버에 저장된 폰트를 변환시킨 후 사용</h3>
+    <p>&lt; 사용과정 &gt;</p>
+    <p>1. 폰트 다운로드(otf, ttf)</p>
+    <p>
+      2. transfonter.org 사이트에서 변형(eot, ttf, woff, woff2, svg) 작업 진행
+    </p>
+    <img src="./img/transfonter.png" alt="transfonter 이미지" width="400" />
+    <p>3. 다운로드한 파일을 드래그 앤 드롭을 통해 넣어주고 convert를 해줌</p>
+    <p>
+      4. convert가 진행된 후 download 버트을 눌러주면 아래 사진의 파일들이
+      들어있는 폴더가 생길 것
+    </p>
+    <p>
+      5. 그 폴더를 우리가 사용할 폴더 (ex. 03_폰트 폴더로) 드래그 앤 드롭을
+      해주면 사진처럼 표시가 될 것
+    </p>
+    <img src="./img/nanum.png" alt="fonts 폴더 내부" width="200" />
+    <p>6. 폴더 이름을 fonts로 바꾸기</p>
+    <p>
+      7. fonts 폴더의 stylesheet.css에 @font-face가 있을텐데 그 내부의 url
+      경로를 내 경로에 맞게 바꿔줘야함.(ex. ../fonts/ 넣기)
+    </p>
+
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/inner_import.png" alt="내부 폰트" width="500" /><br />
+    <img src="./img/inner.png" alt="내부 폰트" width="300" /><br />
+    <img src="./img/inner_p.png" alt="내부 폰트" width="300" /><br />
+
+    <p>&lt; 결과 &gt;</p>
+    <p class="inner_font">내부 폰트 적용</p>
+    <!-- #1. transfonter.org 사이트에서 변형(eot, ttf, woff, woff2, svg) 작업 진행 
+         #2. 폴더 내부에 파일 옮긴 후 스타일(@font-face) 선언-->
+
+    <br />
+    <h2>폰트의 크기(font-size) : px, em, rem, vw, vh, %</h2>
+    <h3>고정형 단위 : px, pt</h3>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/px_pt.png" alt="고정형 단위" width="300" /><br />
+    <img src="./img/px_pt_css.png" alt="고정형 단위" width="200" /><br />
+
+    <div class="unit_px">고정형 단위 - px</div>
+    <div class="unit_pt">고정형 단위 - pt</div>
+
+    <h3>유동형 단위 : em, rem</h3>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/em_rem.png" alt="유동형 단위" width="400" /><br />
+    <img src="./img/em_rem_css.png" alt="유동형 단위" width="400" /><br />
+
+    <div class="unit_em"><p>유동형 단위 - em</p></div>
+    <div class="unit_rem"><p>유동형 단위 - rem</p></div>
+    <p>&lt; 이유 &gt;</p>
+    <p>
+      전체적인 글씨의 크기가 커진 이유 : html에서 font-size를 30px로 했기 때문에
+      전체 영역의 폰트 크기가 커진거다. 그러나 고정형 단위는 앞에서 지정해준대로
+      그대로 20px인 것을 '검사' 창을 통해 확인해볼 수 있다.
+    </p>
+    <img src="./img/px_font.png" alt="고정형 단위 그대로" width="200" />
+
+    <h3>브라우저의 사이즈에 의한 조정 단위</h3>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/vw_vh.png" alt="브라우저 사이즈 단위" width="400" /><br />
+    <img
+      src="./img/vw_vh_css.png"
+      alt="브라우저 사이즈 단위"
+      width="200"
+    /><br />
+
+    <div class="unit_vw">
+      <p>브라우저 외곽(스크롤바 영역 포함) 사이즈 단위 - vw</p>
+    </div>
+    <div class="unit_vh">
+      <p>브라우저 외곽(스크롤바 영역 포함) 사이즈 단위 - vh</p>
+    </div>
+    <p>&lt; 설명 &gt;</p>
+    <p>
+      현재 실행중인 스크린 크기에 맞춰 상대적 크기를 반환하는 것 <br/ >vw :
+      viewport width / vh : viewport height
+    </p>
+  </body>
+</html>
