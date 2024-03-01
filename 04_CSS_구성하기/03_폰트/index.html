@@ -91,8 +91,104 @@
     </div>
     <p>&lt; 설명 &gt;</p>
     <p>
-      현재 실행중인 스크린 크기에 맞춰 상대적 크기를 반환하는 것 <br/ >vw :
+      현재 실행중인 스크린 크기에 맞춰 상대적 크기를 반환하는 것 <br />vw :
       viewport width / vh : viewport height
     </p>
+
+    <h2>폰트 가중치(font-weight) : bold, normal, lighter, 100 ~ 900</h2>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/weight_p.png" alt="폰트 가중치" width="400" /><br />
+    <img src="./img/weight_css.png" alt="폰트 가중치" width="200" /><br />
+    <p class="fw_100">폰트 가중치-100</p>
+    <p class="fw_200">폰트 가중치-200</p>
+    <p class="fw_300">폰트 가중치-300</p>
+    <p class="fw_400">폰트 가중치-400</p>
+    <p class="fw_500">폰트 가중치-500</p>
+    <p class="fw_600">폰트 가중치-600</p>
+    <p class="fw_700">폰트 가중치-700</p>
+    <p class="fw_800">폰트 가중치-800</p>
+    <p class="fw_900">폰트 가중치-900</p>
+    <p class="fw_lighter">폰트 가중치-lighter</p>
+    <p class="fw_normal">폰트 가중치-normal</p>
+    <p class="fw_bold">폰트 가중치-bold</p>
+
+    <h2>폰트 스타일(font-style) : normal, italic</h2>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/italic.png" alt="폰트 스타일" width="400" /><br />
+    <img src="./img/italic_css.png" alt="폰트 스타일" width="200" /><br />
+    <p class="fs_italic">폰트 스타일 - italic</p>
+
+    <h2>문단의 가로방향 정렬(text-align) : left, center, right, justify</h2>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/align.png" alt="문단 가로방향 정렬" width="400" /><br />
+    <img src="./img/align_css.png" alt="문단 가로방향 정렬" width="200" /><br />
+    <p class="ta_left">문장의 가로 정렬 - left</p>
+    <p class="ta_center">문장의 가로 정렬 - center</p>
+    <p class="ta_right">문장의 가로 정렬 - right</p>
+    <p class="ta_justify">
+      문장의 가로 정렬 문장의 가로 정렬 문장의 가로 정렬 문장의 가로 정렬 문장의
+      가로 정렬 문장의 가로 정렬 문장의 가로 정렬 - justify
+    </p>
+
+    <h2>수직방향의 상대적 정렬(vertical-align) : top, middle, bottom</h2>
+    <p>&lt; 사용법 &gt;</p>
+    <img
+      src="./img/vertical.png"
+      alt="수직방향 상대적 정렬"
+      width="500"
+    /><br />
+    <img
+      src="./img/vertical_css.png"
+      alt="수직방향 상대적 정렬"
+      width="300"
+    /><br />
+    <div class="rel_align">
+      <span>인라인1</span>
+      <span>인라인2</span>
+    </div>
+
+    <div class="cart">
+      <a href="">
+        <img src="./img/cart.png" alt="" />
+        <span>CART</span>
+      </a>
+    </div>
+
+    <h2>들여쓰기 & 내여쓰기(text-indent) : 수치로 값을 보여</h2>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/indent.png" alt="들여쓰기" width="700" /><br />
+    <img src="./img/indent_css.png" alt="들여쓰기" width="300" /><br />
+    <div class="txt_indent">들여쓰기(양의 실수) & 내여쓰기(음의 실수)</div>
+
+    <h2>대소문자 변경(text-transform) : uppercase, lowercase, capitalize</h2>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/transform.png" alt="대소문자 변경" width="400" /><br />
+    <img src="./img/transform_css.png" alt="대소문자 변경" width="300" /><br />
+    <p class="tt_uppercase">uppercase</p>
+    <p class="tt_lowercase">LOWERcase</p>
+    <!-- 단어 중 첫글자만 대문자로 변경 -->
+    <p class="tt_capitalize">league of legend</p>
+
+    <h2>
+      문장에 가로 줄 긋기(text-decoration) : underline, line-through, overline,
+      none
+    </h2>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/decoration.png" alt="문장애 가로 줄" width="300" /><br />
+    <img src="./img/decoration.png" alt="문장에 가로 줄" width="300" /><br />
+    <p class="td_underline">아래 줄 긋기</p>
+    <p class="td_through">중간 줄 긋기</p>
+    <p class="td_overline">윗 줄 긋기</p>
+    <a href="" class="td_none">선 없애기</a>
+
+    <h2>
+      문단의 높이(line-height) : 0~실수값 -> 글자 높이의 배수단위 / 0~정수단위
+      -> 실제 높이 값을 지정
+    </h2>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/height.png" alt="문단의 높이" width="400" /><br />
+    <img src="./img/height_css.png" alt="문단의 높이" width="300" /><br />
+    <p class="lh_multiple">배수조정</p>
+    <p class="lh_px">실제 높이 px 조정</p>
   </body>
 </html>
