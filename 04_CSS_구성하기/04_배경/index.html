@@ -14,8 +14,61 @@
 
     <h2>배경이미지(background-image:url(이미지의 파일 또는 경로))</h2>
     <p>&lt; 사용법 &gt;</p>
-    <img src="./img/.png" alt="문장애 가로 줄" width="300" /><br />
-    <img src="./img/decoration.png" alt="문장에 가로 줄" width="300" /><br />
+    <img src="./img/image_div.png" alt="배경이미지" width="300" /><br />
+    <img src="./img/image.png" alt="배경이미지" width="400" /><br />
     <div class="bg_image_01"></div>
+
+    <h2>배경 위치선언(background-position)</h2>
+    <h3>수평위치선언 : left, center, right, 0~100%, px</h3>
+    <h3>수직위치선언 : top, center, bottom, 0~100%, px</h3>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/position.png" alt="배경 위치선언" width="300" /><br />
+    <img src="./img/position_css.png" alt="배경 위치선언" width="400" /><br />
+    <div class="bg_image_02"></div>
+
+    <h2>배경 크기조정(background-size)</h2>
+    <h3>갸로사이즈 세로사이즈 / cover / contain</h3>
+    <p>
+      cover : 배경 이미지를 가능한 크게 확대하여 배경 영역 전체를 채운다.
+      이미지의 원래 비율은 유지된다. 이미지의 일부가 잘릴 수 있다.
+    </p>
+    <p>
+      contain : 배경 이미지를 원래 비율을 유지하면서 가능한 크게 확대한다.
+      이미지는 배경 영역 전체를 채우지 않을 수 있다. 이미지는 절대 잘리지
+      않는다.
+    </p>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/size.png" alt="배경 크기조정" width="300" /><br />
+    <img src="./img/size_css.png" alt="배경 크기조정" width="400" /><br />
+    <div class="bg_image_03"></div>
+    <div class="bg_image_04"></div>
+
+    <h2>배경의 패턴 유무(background-repeat)</h2>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/repeat.png" alt="배경 패턴유무" width="300" /><br />
+    <img src="./img/repeat_css.png" alt="배경 패턴유무" width="400" /><br />
+    <div class="bg_image_05"></div>
+
+    <h2>parallax 효과부여(background-attach) : scroll(기본값) / fixed</h2>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/attach.png" alt="parallax 효과부여" width="300" /><br />
+    <img src="./img/attach_css.png" alt="parallax 효과부여" width="400" /><br />
+    <div class="bg_attach"></div>
+
+    <h2>통합 background</h2>
+    <p>
+      background : 배경색상 배경이미지 반복여부 배경붙이기 배경위치/배경사이즈
+    </p>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/total.png" alt="통합 background" width="300" /><br />
+    <img src="./img/total_css.png" alt="통합 background" width="300" /><br />
+    <div class="total_bg"></div>
+
+    <h2>부모 배경과 자식배경의 배치 + 중앙에 글자 배치</h2>
+    <div class="parent_bg">
+      <div class="child_bg">
+        <h4>Have a good day</h4>
+      </div>
+    </div>
   </body>
 </html>

@@ -7,3 +7,85 @@
   /* url 안에는 ""를 넣지 않는다!! */
   background-image: url(../img/university_01.jpg);
 }
+
+.bg_image_02 {
+  width: 200px;
+  height: 200px;
+  background-color: #fcc;
+  background-image: url(../img/university_01.jpg);
+  background-position: 50% 50%;
+}
+
+.bg_image_03 {
+  width: 200px;
+  height: 200px;
+  background-color: #fcc;
+  background-image: url(../img/university_01.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.bg_image_04 {
+  width: 200px;
+  height: 200px;
+  background-color: #fcc;
+  background-image: url(../img/jan.png);
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.bg_image_05 {
+  width: 100%;
+  height: 200px;
+  background-color: #aff;
+  background-image: url(../img/snoopy.png);
+  /* background-size : width height */
+  background-size: 20px;
+  background-size: 20px auto;
+  /* 여기서는 아래 background-size만 적용이 됨 */
+  background-size: auto 30px;
+  background-repeat: no-repeat;
+  background-repeat: repeat-x;
+  /* 여기서는 아래 background-repeat만 적용이 됨 */
+  background-repeat: repeat-y;
+  background-position: 50% 50%;
+}
+
+.bg_attach {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 600px;
+  background-image: url(../img/wallpaper.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.total_bg {
+  width: 100%;
+  height: 300px;
+
+  background: #000 url(../img/university_02.jpg) no-repeat scroll 50% 50%/100%
+    auto;
+}
+
+.parent_bg {
+  width: 300px;
+  height: 300px;
+  background-image: url(../img/jan.png);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.child_bg {
+  width: 300px;
+  height: 300px;
+  background-image: url(../img/snoopy.png);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 100px;
+}
+.child_bg h4 {
+  color: #ff0;
+  text-align: center;
+  line-height: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
