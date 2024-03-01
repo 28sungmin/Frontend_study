@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+.bg_image_01 {
+  width: 200px;
+  height: 200px;
+  background-color: #fcc;
+  /* url 안에는 ""를 넣지 않는다!! */
+  background-image: url(../img/university_01.jpg);
+}
