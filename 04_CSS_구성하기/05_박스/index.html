@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>05_CSS_박스</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h3>기본 설정</h3>
+    <img src="./img/body_css.png" alt="body css" width="300" /><br />
+
+    <h2>width & height</h2>
+    <p>기본 단위 : px, %(스크롤바 영역 제외), vw/vh(스크롤바 영역 포함)</p>
+    <p>계산된 단위 : calc(50% - 10px)</p>
+
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/width.png" alt="width&height" width="350" /><br />
+    <img src="./img/width_css.png" alt="width&height css" width="300" /><br />
+    <img src="./img/width_css2.png" alt="width&height css" width="250" /><br />
+
+    <div class="fixed_unit_px">고정형 단위(px)</div>
+    <div class="change_unit_per">유동형 단위(%)</div>
+    <div class="change_unit_vw">유동형 단위(vw)</div>
+    <div class="calc_unit_px">계산된 고정형 상자</div>
+    <div class="calc_unit_per">계산된 유동형 상자</div>
+    <div class="full_height"></div>
+
+    <h2>
+      padding 영역 : 컨텐츠 영역(실제 내부 내용 공간)과 보더영역(전체 공간 영역)
+      사이에 존재하는 공간
+    </h2>
+    <p>
+      padding 작성시, padding : 20px; <br />=> 패딩영역을 상우하좌의 모든 공간에
+      동일하게 20px로 부풀리겠다는 의미
+    </p>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/padding01.png" alt="padding" width="500" /><br />
+    <img src="./img/padding_css01.png" alt="padding" width="250" /><br />
+
+    <div class="padding_space_01">padding : 20px; yes</div>
+    <div class="padding_space_01_no">padding : 20px; no</div>
+
+    <p>
+      padding 작성시,<br />
+      padding-top: 30px; padding-right: 20px; padding-bottom: 40px;
+      padding-left: 10px; 으로 스타일을 주고 싶다면 <br />
+      통합시 상단으로부터 시계방향으로 각 방위에 대한 값을 부여 가능<br />
+      => padding: 30px 20px 40px 10px / padding: 상 우 하 좌;
+    </p>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/padding02.png" alt="padding" width="550" /><br />
+    <img src="./img/padding_css02.png" alt="padding" width="250" /><br />
+    <div class="padding_space_02">padding: 30px 20px 40px 10px; yes</div>
+    <div class="padding_space_02_no">padding: 30px 20px 40px 10px; no</div>
+
+    <p>
+      padding 작성시,<br />
+      padding-top: 20px; padding-right: 40px; padding-bottom: 20px;
+      padding-left: 40px; 으로 스타일을 주고 싶다면 <br />
+      통합시 상단으로부터 시계방향으로 각 방위에 대한 값을 부여 가능<br />
+      => padding: 20px 40px 20px 40px / padding: 상 우 하 좌; <br />
+      => padding: 20px 40px; / padding: (상하) (우좌)
+    </p>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/padding03.png" alt="padding" width="550" /><br />
+    <img src="./img/padding_css03.png" alt="padding" width="250" /><br />
+    <div class="padding_space_03">padding: 20px 40px; yes</div>
+    <div class="padding_space_03_no">padding: 20px 40px; no</div>
+
+    <p>
+      padding 작성시,<br />
+      padding-top: 60px; padding-right: 40px; padding-bottom: 20px;
+      padding-left: 40px; 으로 스타일을 주고 싶다면 <br />
+      통합시 상단으로부터 시계방향으로 각 방위에 대한 값을 부여 가능<br />
+      => padding: 60px 40px 20px; / padding: 상 (우좌) 하
+    </p>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/padding04.png" alt="padding" width="550" /><br />
+    <img src="./img/padding_css04.png" alt="padding" width="250" /><br />
+
+    <div class="padding_space_04">padding: 60px 40px 20px; yes</div>
+    <div class="padding_space_04_no">padding: 60px 40px 20px; no</div>
+
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/padding_total.png" alt="padding" width="350" /><br />
+    <img src="./img/padding_total_css.png" alt="padding" width="250" /><br />
+    <div class="multi_padding_box">
+      <div class="child_box"></div>
+    </div>
+
+    <h2>border : 형태를 지정한 마지막 외곽라인</h2>
+    <p>border: 두께 선스타일 색상</p>
+
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/border01.png" alt="border" width="350" /><br />
+    <img src="./img/border_css01.png" alt="border" width="250" /><br />
+    <div class="border_solid">border_solid</div>
+    <div class="border_dashed">border_dashed</div>
+
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/border02.png" alt="border" width="350" /><br />
+    <img src="./img/border_css02.png" alt="border" width="250" /><br />
+    <div class="border_dotted">border_dotted</div>
+    <div class="border_double">border_double</div>
+
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/border03.png" alt="border" width="350" /><br />
+    <img src="./img/border_css03.png" alt="border" width="250" /><br />
+    <div class="border_groove">border_groove</div>
+    <div class="border_ridge">border_ridge</div>
+
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/border04.png" alt="border" width="350" /><br />
+    <img src="./img/border_css04.png" alt="border" width="250" /><br />
+    <div class="border_inset">border_inset</div>
+    <div class="border_outset">border_outset</div>
+
+    <h3>border와 padding의 활용</h3>
+    <p>&lt; 사용법 &gt;</p>
+    <img
+      src="./img/border_padding.png"
+      alt="border and padding"
+      width="350"
+    /><br />
+    <img
+      src="./img/border_padding_css.png"
+      alt="border and padding"
+      width="250"
+    /><br />
+    <ul class="b_p_menu">
+      <li><a href="">About</a></li>
+      <li><a href="">Skill</a></li>
+      <li><a href="">Portfolio</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+
+    <h2>margin 영역 : 바깥쪽 여백의 공간을 지칭. 주변 사람과의 이격된 공간</h2>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/margin01.png" alt="margin" width="500" /><br />
+    <img src="./img/margin_css01.png" alt="margin" width="250" /><br />
+    <div class="margin_space_01">margin: 50px; yes</div>
+    <div class="margin_space_01_no">margin: 50px; no</div>
+
+    <p>
+      상하마진을 두 자식 공간에 동일하게 부여시, 가급적이면 상하의 마진은 한쪽
+      방향으로만 부여한다.<br />
+      (상하의 경우 중첩현상이 발생하기 때문)
+    </p>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/margin02.png" alt="margin" width="300" /><br />
+    <img src="./img/margin_css02.png" alt="margin" width="550" /><br />
+
+    <p>&lt; 결과 해석 &gt;</p>
+    <p>
+      왜 margin-top을 빼도 똑같은 간격이 나오지? => 상하마진 중첩현상이 발생하기
+      때문이야
+    </p>
+
+    <div class="margin_space_02">
+      <div class="child1">two</div>
+      <div class="child2">two</div>
+    </div>
+    <div class="margin_space_02_no">
+      <div class="child1">one</div>
+      <div class="child2">one</div>
+    </div>
+
+    <p>컨텐츠의 좌우 마진에 동일 공간 부여시, 각 영역의 지정된 중첩현상 없음</p>
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/margin03-1.png" alt="margin" width="300" /><br />
+    <img src="./img/margin_css03-1.png" alt="margin" width="300" /><br />
+    <div class="margin_space_03">
+      <div class="child1">two</div>
+      <div class="child2">two</div>
+    </div>
+
+    <p>&lt; 사용법 &gt;</p>
+    <img src="./img/margin03-2.png" alt="margin" width="300" /><br />
+    <img src="./img/margin_css03-2.png" alt="margin" width="300" /><br />
+    <div class="margin_space_03_no">
+      <div class="child1">one</div>
+      <div class="child2">one</div>
+    </div>
+
+    <p>
+      margin 영역은 음수 지정 가능(스크립트 파트에서는 좌우로 넘어가는
+      슬라이드로 구성 가능)
+    </p>
+    <div class="margin_minus_space">
+      <div class="main_space"></div>
+      <div class="reverse_space"></div>
+    </div>
+  </body>
+</html>
