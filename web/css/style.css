@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/* 기본 설정 */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 90%;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* header 설정 */
+.header .video {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* main_body 설정 */
+/* logo */
+.main_body .logo {
+  text-align: center;
+}
+.main_body .logo a img {
+  width: 25%;
+}
+
+/* menu */
+.main_body .menu > ul {
+  display: flex;
+  justify-content: center;
+}
+.main_body .menu > ul > .img_bx {
+  text-align: center;
+  margin: 0 5%;
+}
+.main_body .menu > ul > .img_bx > a > img {
+  width: 80%;
+}
+
+/* click 설정 */
+.click {
+  margin-top: 13%;
+}
+.click .html {
+  display: flex;
+  justify-content: space-between;
+}
+.click .html .img01 img {
+  width: 70%;
+}
+.click .html .img02 {
+  width: 15%;
+}

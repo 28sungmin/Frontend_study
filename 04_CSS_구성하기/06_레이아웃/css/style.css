@@ -97,5 +97,72 @@ a {
   padding: 20px 0;
   background-color: #aff;
 
+  /* font-size는 inline-block이 잡힌 공간의 부모에 적기 */
+  /* font-size : 0을 하면 inline-block이 잡힌 공간을 제거해준다. */
+  /* 이는 자식 요소 사이의 여백을 제거하는 간편한 방법 */
   font-size: 0;
+}
+#display .img-box {
+  width: calc(25% - 20px);
+  height: 200px;
+  /* 좌우로 1px씩 붙어서 25%에다가 2px의 크기인거다 */
+  border: 1px dashed red;
+  border: none;
+
+  /* 아래 3개는 모든 img-box에 공통이라서 여기에 적어준다. */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+
+  /* inline-block은 enter라는 공간을 차지한다. */
+  display: inline-block;
+
+  margin: 0 10px;
+}
+
+/* .img-box.bg1할 때 반드시 붙이기. 떼면 자식이 되어버린다. 붙이면 종속이 되어버린다. */
+#display .img-box.bg1 {
+  background-image: url(../img/snoopy_01.png);
+  background-color: #faa;
+}
+#display .img-box.bg2 {
+  background-image: url(../img/snoopy_02.png);
+  background-color: #ff0;
+}
+#display .img-box.bg3 {
+  background-image: url(../img/snoopy_03.png);
+  background-color: #0ff;
+}
+#display .img-box.bg4 {
+  background-image: url(../img/snoopy_04.png);
+  background-color: #0f0;
+}
+
+#display-center {
+  padding: 20px 0;
+  background-color: #f90;
+}
+#display-center .wrap {
+  width: 1000px;
+}
+#display-center .wrap .img-box {
+  width: 230px;
+  height: 200px;
+}
+
+#display-center .wrap .img-box.bg1 {
+  background-image: url(../img/snoopy_01.png);
+  background-color: #faa;
+}
+#display-center .wrap .img-box.bg2 {
+  background-image: url(../img/snoopy_02.png);
+  background-color: #ff0;
+}
+#display-center .wrap .img-box.bg3 {
+  background-image: url(../img/snoopy_03.png);
+  background-color: #0ff;
+}
+#display-center .wrap .img-box.bg4 {
+  background-image: url(../img/snoopy_04.png);
+  background-color: #0f0;
 }
