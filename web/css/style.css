@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
 /* 기본 설정 */
 html,
 body {
@@ -60,15 +61,72 @@ a {
 
 /* click 설정 */
 .click {
-  margin-top: 13%;
 }
+/* click html 설정 */
 .click .html {
+  margin: 10% 0;
+  display: flex;
+}
+.click .html .html01 {
+  width: 70%;
+}
+.click .html .html01 img {
+  width: 90%;
+  height: 300px;
+}
+
+.click .html .img_html {
+}
+.click .html .img_html p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 2.3em;
+}
+.click .html .img_html .arrow_left {
+  margin-top: 6%;
+}
+
+/* click css 설명 */
+.click .css {
   display: flex;
   justify-content: space-between;
 }
-.click .html .img01 img {
+.click .css .img_css .arrow_right {
+  display: flex;
+  justify-content: flex-end;
+}
+.click .css .css01 {
+  width: 70%;
+  display: flex;
+  justify-content: end;
+}
+.click .css .css01 img {
+  width: 90%;
+  height: 300px;
+}
+.click .css .img_css p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 2.3em;
+}
+
+/* click js 설정 */
+.click .js {
+  margin: 10% 0;
+  display: flex;
+}
+.click .js .js01 {
   width: 70%;
 }
-.click .html .img02 {
-  width: 15%;
+.click .js .js01 img {
+  width: 90%;
+  height: 300px;
+}
+
+.click .js .img_js {
+}
+.click .js .img_js p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 2.3em;
+}
+.click .html .img_js .arrow_left {
+  margin-top: 6%;
 }
