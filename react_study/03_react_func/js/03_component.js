@@ -6,7 +6,7 @@ console.log(React.Component);
 const root = document.querySelector("#root");
 
 // React 16버전에서 class라는 함수로 Component를 구성
-class Hello1 extends React.Compoennt {
+class Hello1 extends React.Component {
   // Hello1를 hello1처럼 소문자로 하면 태그로 인식하게 되어 안된다. 반드시 대문자로 쓰기
   render() {
     const userName = "BTS";
